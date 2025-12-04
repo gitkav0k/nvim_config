@@ -18,6 +18,7 @@
 | `<leader>tn` | Next tab | Normal |
 | `<leader>tp` | Previous tab | Normal |
 | `<leader>lw` | Toggle line wrapping | Normal |
+| `<leader>bg` | Toggle background transparency | Normal |
 
 ## 📁 File Explorer (Neo-tree)
 
@@ -53,6 +54,7 @@
 | `<leader>sk` | Search Keymaps | Normal |
 | `<leader>sh` | Search Help | Normal |
 | `<leader>sr` | Resume last search | Normal |
+| `<leader>ss` | Select Telescope pickers | Normal |
 
 ## 🧠 LSP & Coding
 
@@ -74,8 +76,19 @@
 | `<leader>d` | Open floating diagnostic | Normal |
 | `<leader>q` | Open diagnostics list | Normal |
 
-## 🤖 AI Generation (gen.nvim)
+## 🤖 AI Assistance
 
+### opencode.nvim
+| Key | Description | Mode |
+| :--- | :--- | :--- |
+| `<C-a>` | **Ask opencode** (`@this` context) | Normal/Visual |
+| `<C-x>` | **Execute** opencode action | Normal/Visual |
+| `ga` | Add file/selection to context | Normal/Visual |
+| `<C-.>` | Toggle Chat Window | Normal/Terminal |
+| `<S-C-u>` | Scroll Chat Up | Normal |
+| `<S-C-d>` | Scroll Chat Down | Normal |
+
+### gen.nvim
 > **Note:** Trigger via command `:Gen` (select text in visual mode for context)
 
 | Key | Description | Mode |
@@ -92,12 +105,15 @@
 | `<C-n>` / `<C-p>`| Next / Previous item | Insert |
 | `<Tab>` / `<S-Tab>` | Next / Prev item (or Snippet Jump) | Insert |
 | `<C-y>` | Confirm Completion | Insert |
+| `<C-b>` / `<C-f>`| Scroll docs back/forward | Insert |
 | `<C-l>` | Snippet Jump Forward | Insert |
 | `<C-h>` | Snippet Jump Backward | Insert |
 | `<C-_>` / `<C-/>`| Toggle Comment | Normal/Visual |
 | `x` | Delete char without yanking | Normal |
 | `<` / `>` | Indent/Outdent (stays in visual) | Visual |
 | `p` | Paste without overwriting register | Visual |
+| `+` | Increment number (Remapped) | Normal |
+| `-` | Decrement number (Remapped) | Normal |
 
 ## 📄 Buffers & Navigation
 
